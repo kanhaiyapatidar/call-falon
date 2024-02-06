@@ -84,7 +84,7 @@ const About = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top  w-[50%] rounded-lg bg-white p-10 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black xl:p-15"
+              className="animate_top md:w-[50%]  w-[100%] rounded-lg bg-white p-10 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black xl:p-15"
             >
               <h2 className="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
                 Send a message

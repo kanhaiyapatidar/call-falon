@@ -176,7 +176,7 @@ const Contact = () => {
                   Email Address
                 </h3>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
+                 callfalon@gmail.com
                 </p>
               </div>
               <div>

@@ -27,6 +27,8 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyMenu);
   });
 
+  console.log(navigationOpen,"gfghjk");
+  
   return (
     <header
       className={`fixed left-0 top-0 z-99999 w-full  ${
@@ -129,7 +131,7 @@ const Header = () => {
                       >
                         {menuItem.submenu.map((item, key) => (
                           <li key={key} className="hover:text-[#4d7d38] hover:underline	underline-offset-4	">
-                            <Link href={item.path || "#"}>{item.title}</Link>
+                            <Link href={item.path || "#"} >{item.title}</Link>
                           </li>
                         ))}
                       </ul>
@@ -137,6 +139,7 @@ const Header = () => {
                   ) : (
                     <Link
                       href={`${menuItem.path}`}
+                      onClick={()=> setNavigationOpen(false)}
                       className={
                         pathUrl === menuItem.path
                           ? "text-[#4d7d38] hover:text-[#4d7d38] underline	underline-offset-4	"
