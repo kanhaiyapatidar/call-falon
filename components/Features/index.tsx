@@ -14,7 +14,7 @@ const Feature = () => {
           <SectionHeader
             headerInfo={{
               title: "Our Services",
-             
+              subtitle:'',
               description: `At Falon Sourcing Solutions LLC, we take pride to provide our customers high quality services personalized for their unique needs. We are available for face to face appointments, during our business hours and and Saturdays by appointment. Our staff members are professional, courteous and efficient.`,
             }}
           />

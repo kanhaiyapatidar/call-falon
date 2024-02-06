@@ -13,7 +13,9 @@ const About = () => {
           <div className="animate_top mx-auto text-center">
             <SectionHeader
               headerInfo={{
+
                 title: `ABOUT US`,
+                description:``,
                 subtitle: `About Falon Sourcing Solutions LLC`,
               }}
             />
