@@ -21,7 +21,7 @@ const Banner = () => {
               className="absolute top-[-74px] right-[51px]"
             />
             <h2 className="text-midnightblue text-4xl md:text-6xl	 text-center lg:text-start font-semibold lh-133 pt-5">
-              Secret to our success is our customer's loyalty{" "}
+              Secret to our success is our customers loyalty{" "}
             </h2>
             <h3 className="text-black opacity-75 text-lg font-normal text-center lg:text-start pt-8">
             Falon has established a standard of excellence by providing comprehensive support services to Federal, State, Local Governments, Corporations and Associations through delivering high quality cost effective innovative solutions. In addition, Falon is a graduate of the U.S. Small Business Administration 8(a) business development program.

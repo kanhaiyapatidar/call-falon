@@ -203,7 +203,7 @@ const Pricing = () => {
                     className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]" />
                 <input type='text' placeholder='Subject'
                     className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]" />
-                <textarea placeholder='Message' rows="6"
+                <textarea placeholder='Message' rows={6}
                     className="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-[#007bff]"></textarea>
                 <button type='button'
                     className="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-3 w-full">Send</button>
