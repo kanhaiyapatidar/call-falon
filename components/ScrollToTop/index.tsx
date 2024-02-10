@@ -35,8 +35,9 @@ export default function ScrollToTop() {
           aria-label="scroll to top"
           className="hover:shadow-signUp flex h-10 w-10 cursor-pointer items-center justify-center rounded-sm bg-[#4d7d38] text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80"
         >
-          <span className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
-          <span className="sr-only">scroll to top</span>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 11l6-6l6 6M6 19l6-6l6 6"/></svg>
+      
         </div>
       )}
     </div>
