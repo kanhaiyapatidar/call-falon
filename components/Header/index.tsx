@@ -34,26 +34,27 @@ const Header = () => {
       className={`fixed left-0 top-0 z-99999 w-full  ${
         stickyMenu
           ? "bg-white  shadow transition duration-100 dark:bg-black"
-          : ""
+          : "bg-white  shadow transition duration-100"
       }`}
     >
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
         <div className="flex w-full items-center justify-between xl:w-1/4">
           <a href="/">
-            <Image
+            <img src="/logo.jpg" className="h-[70px]"/>
+            {/* <Image
             src="/logo.jpg"
               alt="logo"
               width={119.03}
-              height={30}
+              height={25}
               className="hidden w-full dark:block"
             />
             <Image
               src="/logo.jpg"
               alt="logo"
               width={119.03}
-              height={30}
+              height={25}
               className="w-full dark:hidden"
-            />
+            /> */}
           </a>
 
           {/* <!-- Hamburger Toggle BTN --> */}
@@ -105,14 +106,14 @@ const Header = () => {
           }`}
         >
           <nav>
-            <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
+            <ul className="flex flex-col  xl:flex-row xl:items-center gap-[5px]">
               {menuData.map((menuItem, key) => (
                 <li key={key} className={menuItem.submenu && "group relative"}>
                   {menuItem.submenu ? (
                     <>
                       <button
                         onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-[#4d7d38] hover:underline	underline-offset-4	"
+                        className="flex cursor-pointer items-center justify-between  hover:text-[#4d7d38] hover:underline	underline-offset-4	"
                       >
                         {menuItem.title}
                         <span>
@@ -130,8 +131,8 @@ const Header = () => {
                         className={`dropdown ${dropdownToggler ? "flex" : ""}`}
                       >
                         {menuItem.submenu.map((item, key) => (
-                          <li key={key} className="hover:text-[#4d7d38] hover:underline	underline-offset-4	">
-                            <Link href={item.path || "#"} >{item.title}</Link>
+                          <li key={key} className="hover:text-[#4d7d38] hover:underline	underline-offset-4 px-[20px]">
+                            <Link href={item.path || "#"}  className="px-[20px]">{item.title}</Link>
                           </li>
                         ))}
                       </ul>
@@ -142,8 +143,8 @@ const Header = () => {
                       onClick={()=> setNavigationOpen(false)}
                       className={
                         pathUrl === menuItem.path
-                          ? "text-[#4d7d38] hover:text-[#4d7d38] underline	underline-offset-4	"
-                          : "hover:text-[#4d7d38] hover:underline	underline-offset-4	"
+                          ? "text-[#4d7d38]  px-[20px] bgColorLink text-white	py-[10px] rounded	"
+                          : "hover:text-[#4d7d38] bgColorLinkHover rounded py-[10px] hover:text-white	px-[20px]"
                       }
                     >
                       {menuItem.title}
@@ -155,21 +156,22 @@ const Header = () => {
           </nav>
 
           <div className="mt-7 flex items-center gap-6 xl:mt-0">
-            <ThemeToggler />
+            {/* <ThemeToggler /> */}
 {/* 
             <Link
               href="https://github.com/NextJSTemplates/solid-nextjs"
               className="text-regular font-medium text-waterloo hover:text-primary"
             >
               GitHub Repo 🌟
-            </Link>
+            </Link> */}
 
             <Link
-              href="https://nextjstemplates.com/templates/solid"
-              className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
+              href="/"
+              className="flex items-center justify-center rounded-full  px-7.5 py-2.5 text-regular  duration-300 ease-in-out h hover:opacity-80	text-black font-[700]"
+              style={{ border:'3px solid rgb(230 217 90)', }}
             >
-              Get Pro 🔥
-            </Link> */}
+              Contact us
+            </Link>
           </div>
         </div>
       </div>

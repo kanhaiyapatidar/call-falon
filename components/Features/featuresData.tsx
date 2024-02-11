@@ -3,13 +3,15 @@ import { Feature } from "@/types/feature";
 const featuresData: Feature[] = [
   {
     id: 1,
+    image: "/images/features/facilities.webp",
     icon: "/images/icon/icon-01.svg",
-    title: "Facility Management:",
+    title: "Facility Management",
     description:
       "Falon’s capabilities include management of ON and OFF site mailroom & warehouse facilities. We specialize in meeting our client's requirements for privacy, document security, control, and turnaround time. Our staffing strategies guarantee seamless transition and employee retention..",
   },
   {
     id: 2,
+    image: "/images/features/logistic.jpg",
     icon: "/images/icon/icon-02.svg",
     title: "Logistic Consulting / Coordination  ",
     description:
@@ -17,6 +19,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 3,
+    image: "/images/features/warehouse.jpg",
     icon: "/images/icon/icon-03.svg",
     title: "Order Fulfillment / Warehouse Management ",
     description:
@@ -24,6 +27,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 4,
+    image: "/images/features/consolidation.jpeg",
     icon: "/images/icon/icon-04.svg",
     title: "Mail Consolidation & Presorting",
     description:
@@ -31,6 +35,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 5,
+    image: "/images/features/support.jpg",
     icon: "/images/icon/icon-05.svg",
     title: "Help Desk / End User Support",
     description:
@@ -38,6 +43,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 6,
+    image: "/images/features/Business-Printing.jpeg",
     icon: "/images/icon/icon-06.svg",
     title: "Business Printing   ",
     description:

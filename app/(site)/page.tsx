@@ -12,6 +12,7 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import FeedBack from "@/components/Feedback/FeedBack";
 
 export const metadata: Metadata = {
   title: "Falon",
@@ -33,6 +34,7 @@ export default function Home() {
       {/* <FAQ /> */}
       {/* <Testimonial /> */}
       {/* <Pricing /> */}
+      <FeedBack/>     
       <Contact />
       {/* <Blog /> */}
     </main>
