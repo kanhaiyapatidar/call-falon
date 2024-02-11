@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import Feature from "@/components/Features";
+import OurServices from "@/components/OurServices";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 const ourServicesPage = () => {
   return (
-    <div className="pb-20 pt-14">
-<Feature/>
+    <div className="pb-20 pt-20">
+<OurServices/>
     </div>
   );
 };

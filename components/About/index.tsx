@@ -365,7 +365,7 @@ const About = () => {
               Design/Implementation with this knowledge we are able to offer our
               clients innovative cost reducing solutions.{" "}
             </div>
-            <ul className="pt-[20px]">
+            <ul className="pt-[20px] text-black">
               <li className="flex items-center gap-3 ">
                 <div>
                   <svg
@@ -443,13 +443,13 @@ const About = () => {
        
         className="flex  justify-center  gap-[120px] px-[0px] sm:px-[18px] py-[10px] pb-[100px]"
       >
-        <div className="w-[80%] rounded-2xl bg-white	p-[40px] shadow-xl" style={{backgroundColor:'rgb(77 125 56 )'}}>
+        <div className="w-[80%] rounded-2xl bg-white	p-[40px] shadow-xl" style={{border:' 2px solid rgb(77 125 56 )'}}>
     
         
           <div className="">
           
               
-              <p className=" text-[18px] text-white">
+              <p className=" text-[18px] text-black">
              " To achieve excellence in performance and attain customer service goals, Falon applies an interactive approach to staff management that is most effective when it is based on shared values and expectations. Through fostering a flexible work force within a healthy work place, high-quality service is consistently delivered to Falon's contracts. A work environment that encourages open communication, prizes fairness, recognizes quality work, and respects the differences and rights of all individuals ultimately yields optimal staff health and performance."
               </p>
             
@@ -791,7 +791,7 @@ const About = () => {
               <p className="pt-[20px] text-[20px] text-black">
               NAVSEA awarded Falon Sourcing Solutions a Multiple Award Contract (SeaPort-e) on June 30, 2016.
               </p>
-              <p className="pt-[20px] text-[18px]">
+              <p className="pt-[20px] text-[17px] text-black">
               -  The SeaPort-e is the Navy's electronic platform for acquiring support services in 22 functional areas including Engineering, Financial Management, and Program Management. The Navy Systems Commands (NAVSEA, NAVAIR, SPAWAR, NAVFAC, and NAVSUP), the Office of Naval Research, Military Sealift Command, and the United States Marine Corps compete their service requirements amongst 2400+ SeaPort-e IDIQ multiple award contract holders.
               </p>
             
