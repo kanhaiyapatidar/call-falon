@@ -344,13 +344,13 @@ const About = () => {
         </div>
         <div className="h-[100%] w-full lg:w-[50%] flex justify-center lg:px-[0px] px-[20px]">
           <div className="w-[90%]">
-            <h2 className="decoration-[rgb(235	 225 123)]	text-[20px] tracking-[1px] underline	decoration-2	underline-offset-[5px]	">
+            <h2 className="decoration-[rgb(235	 225 123)]	text-[35px] tracking-[1px] underline	decoration-2	underline-offset-[5px]	">
               About Company
             </h2>
             <h1 className="pt-[40px] text-[40px] font-[700] text-black">
               We’re More than a Industrial Company
             </h1>
-            <p className="pt-[20px] font-[600] 	tracking-[0.5px] text-green-800">
+            <p className="pt-[20px] font-[600] 	tracking-[0.5px] text-green-800 mr-6">
               Falon recognizes that its staff and clients are its most important
               assets and that the effectiveness of the organization depends on
               the accumulated contributions of its individual employees. Falon
@@ -359,7 +359,7 @@ const About = () => {
               in building and delivering cohesive on-site program support teams.{" "}
             </p>
 
-            <div className="pt-[10px] text-[17px] text-black">
+            <div className="pt-[10px] text-[17px] text-black mr-6">
               Falon has over 35 years of experience in Mail Management,
               Facilities Support Services and Instructional
               Design/Implementation with this knowledge we are able to offer our
@@ -419,6 +419,78 @@ const About = () => {
                   </svg>
                 </div>{" "}
                 <div>Associations and other Non-Profit Organizations</div>
+              </li>
+              <li className="flex items-center gap-3 ">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="rgb(108 133 17)"
+                      fill-rule="evenodd"
+                      d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>{" "}
+                <div>Graduate of the Goldman Sachs 10K Businesses program</div>
+              </li>
+              <li className="flex items-center gap-3 ">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="rgb(108 133 17)"
+                      fill-rule="evenodd"
+                      d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>{" "}
+                <div>Graduate of the State of Virginia - Scaling for Growth Program</div>
+              </li>
+              <li className="flex items-center gap-3 ">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="rgb(108 133 17)"
+                      fill-rule="evenodd"
+                      d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>{" "}
+                <div>Member of the National Association of Credit Counselors</div>
+              </li>
+              <li className="flex items-center gap-3 ">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="rgb(108 133 17)"
+                      fill-rule="evenodd"
+                      d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>{" "}
+                <div>Proud sponsor of the Northern Virginia Family Service - SERVE Campus</div>
               </li>
             </ul>
           </div>
