@@ -140,8 +140,15 @@ const Contact = () => {
             <h3 className="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
               Address
             </h3>
+           
             <p className="text-black">
-              703-330-9300 9028-C Prince William Street, Manassas, VA 20110
+            9028 Prince William Street - Suite C
+            </p>
+            <p className="text-black">
+            Manassas, VA 20110-5664
+            </p>
+            <p className="text-black">
+            Phone: 703-330-9300
             </p>
  
             <div className="px-[20px]">

@@ -111,8 +111,15 @@ const Footer = () => {
                   </h4>
 
                   <div className="text-black">
-                    703-330-9300 9028-C Prince <br /> William Street, Manassas,
-                    VA 20110
+                  <p className="text-black">
+            9028 Prince William Street - Suite C
+            </p>
+            <p className="text-black">
+            Manassas, VA 20110-5664
+            </p>
+            <p className="text-black">
+            Phone: 703-330-9300
+            </p>
                   </div>
                   <ul className="flex md:justify-end gap-8 pt-5 justify-start">
                   <li>

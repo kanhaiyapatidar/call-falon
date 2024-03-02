@@ -350,7 +350,7 @@ const About = () => {
             <h1 className="pt-[40px] text-[40px] font-[700] text-black">
               We’re More than a Industrial Company
             </h1>
-            <p className="pt-[20px] font-[600] 	tracking-[0.5px] text-green-800 mr-6">
+            <p className="pt-[20px] font-[600] 	tracking-[0.5px] text-green-800 mr-8">
               Falon recognizes that its staff and clients are its most important
               assets and that the effectiveness of the organization depends on
               the accumulated contributions of its individual employees. Falon
@@ -359,7 +359,7 @@ const About = () => {
               in building and delivering cohesive on-site program support teams.{" "}
             </p>
 
-            <div className="pt-[10px] text-[17px] text-black mr-6">
+            <div className="pt-[10px] text-[17px] text-black mr-8">
               Falon has over 35 years of experience in Mail Management,
               Facilities Support Services and Instructional
               Design/Implementation with this knowledge we are able to offer our
@@ -512,19 +512,19 @@ const About = () => {
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true }}
-       
+
         className="flex  justify-center  gap-[120px] px-[0px] sm:px-[18px] py-[10px] pb-[100px]"
       >
-        <div className="w-[80%] rounded-2xl bg-white	p-[40px] shadow-xl" style={{border:' 2px solid rgb(77 125 56 )'}}>
-    
-        
+        <div className="w-[80%] rounded-2xl bg-white	p-[40px] shadow-xl" style={{ border: ' 2px solid rgb(77 125 56 )' }}>
+
+
           <div className="">
-          
-              
-              <p className=" text-[18px] text-black">
-             " To achieve excellence in performance and attain customer service goals, Falon applies an interactive approach to staff management that is most effective when it is based on shared values and expectations. Through fostering a flexible work force within a healthy work place, high-quality service is consistently delivered to Falon's contracts. A work environment that encourages open communication, prizes fairness, recognizes quality work, and respects the differences and rights of all individuals ultimately yields optimal staff health and performance."
-              </p>
-            
+
+
+            <p className=" text-[18px] text-black">
+              " To achieve excellence in performance and attain customer service goals, Falon applies an interactive approach to staff management that is most effective when it is based on shared values and expectations. Through fostering a flexible work force within a healthy work place, high-quality service is consistently delivered to Falon's contracts. A work environment that encourages open communication, prizes fairness, recognizes quality work, and respects the differences and rights of all individuals ultimately yields optimal staff health and performance."
+            </p>
+
           </div>
         </div>
       </motion.div>
@@ -730,12 +730,14 @@ const About = () => {
         </div>
         <div className="  flex h-[100%] w-full lg:w-[50%] justify-center lg:justify-start ">
           <div className="aboutBox w-[80%] rounded-[15px] bg-white p-[50px] text-white shadow-xl	 ">
-            <h2
-              className="decoration-[rgb(235	 225 123)]	text-[22px] tracking-[1px] underline	decoration-2	underline-offset-[5px]	"
-              style={{ color: " rgb(230 217 90)" }}
-            >
+          
+          
+            <h2 className="decoration-[rgb(235 225 123)] text-[22px] tracking-[1px] underline decoration-2 underline-offset-[5px]"
+              style={{ color: "rgb(139, 101, 8)" }}>
               Government
             </h2>
+           
+           
 
             <div className="flex h-[100%] items-center pt-[30px] ">
               <ul className="flex flex-col gap-[20px] font-[600] text-black ">
@@ -823,7 +825,7 @@ const About = () => {
           <div>
             <h2
               className="decoration-[rgb(235	 225 123)]	text-[22px] tracking-[1px] underline	decoration-2	underline-offset-[5px]	"
-              style={{ color: " rgb(230 217 90)" }}
+              style={{ color: "rgb(139, 101, 8)" }}
             >
               Corporations
             </h2>
@@ -839,7 +841,7 @@ const About = () => {
           <div className="pt-[50px]">
             <h2
               className="decoration-[rgb(235	 225 123)]	text-[22px] tracking-[1px] underline	decoration-2	underline-offset-[5px]	"
-              style={{ color: " rgb(230 217 90)" }}
+              style={{ color: "rgb(139, 101, 8)" }}
             >
               Associations
             </h2>
@@ -855,18 +857,18 @@ const About = () => {
           <div className="pt-[50px]">
             <h2
               className="decoration-[rgb(235	 225 123)]	text-[22px] tracking-[1px] underline	decoration-2	underline-offset-[5px]	"
-              style={{ color: " rgb(230 217 90)" }}
+              style={{ color: "rgb(139, 101, 8)" }}
             >
               Seaport-e
             </h2>
-         
-              <p className="pt-[20px] text-[20px] text-black">
+
+            <p className="pt-[20px] text-[20px] text-black">
               NAVSEA awarded Falon Sourcing Solutions a Multiple Award Contract (SeaPort-e) on June 30, 2016.
-              </p>
-              <p className="pt-[20px] text-[17px] text-black">
+            </p>
+            <p className="pt-[20px] text-[17px] text-black">
               -  The SeaPort-e is the Navy's electronic platform for acquiring support services in 22 functional areas including Engineering, Financial Management, and Program Management. The Navy Systems Commands (NAVSEA, NAVAIR, SPAWAR, NAVFAC, and NAVSUP), the Office of Naval Research, Military Sealift Command, and the United States Marine Corps compete their service requirements amongst 2400+ SeaPort-e IDIQ multiple award contract holders.
-              </p>
-            
+            </p>
+
           </div>
         </div>
       </motion.div>
