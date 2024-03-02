@@ -1,11 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <>
-      <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
+      <footer
+        style={{ "border": "1px solid green" }}
+        className="footer border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
         <div className="mx-auto max-w-c-1390 py-2 px-4 md:px-8 2xl:px-0">
           {/* <!-- Footer Top --> */}
           <div>
@@ -29,7 +32,7 @@ const Footer = () => {
                 className="animate_top w-1/2 pt-[15px] lg:w-1/4"
               >
                 <a href="index.html" className="relative">
-                  <img src="/logo.jpg" />
+                  <Image alt="" src="/logoUpdated.png" width={150} height={60} />
                 </a>
 
                 <p className="mb-10 mt-5 text-[22px] font-[600] text-black">
@@ -47,7 +50,10 @@ const Footer = () => {
                 </a> */}
               </motion.div>
 
-              <div className="flex w-full flex-col  justify-start gap-20 md:flex-row  lg:w-2/3 lg:justify-start xl:w-7/12 ">
+
+
+              <div className="flex w-full flex-col gap-12 md:flex-row lg:w-full lg:flex-wrap xl:w-7/12">
+
                 <motion.div
                   variants={{
                     hidden: {
@@ -64,24 +70,84 @@ const Footer = () => {
                   whileInView="visible"
                   transition={{ duration: 1, delay: 0.1 }}
                   viewport={{ once: true }}
-                  className="animate_top"
+                  className="animate_top mt-10"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Hours{" "}
+                  <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
+                    <u>
+
+                      Quick links
+                    </u>
                   </h4>
 
-                  <ul className="row-gap-5 text-black">
-                    <li className="flex gap-10 text-[17px] font-[500]">
+                  <div className="text-black " style={{ cursor: "pointer", marginLeft:"-20px" }} >
+                    <ul >
+                      <li>
+                        <Link href={"/"} className="px-[20px]"> Home</Link>
+
+                      </li>
+                      <li>
+                        <Link href={"/ourServices"} className="px-[20px]"> Our services</Link>
+
+                      </li>
+                      <li>
+
+                        <Link href={"/about"} className="px-[20px]">  About us</Link>
+                      </li>
+                      <li>
+                        <Link href={"/contractingVehicles"} className="px-[20px]">  Contracting vehicles</Link>
+
+                      </li>
+                      <li>
+                        <Link href={"/contact"} className="px-[20px]"> Contact</Link>
+
+                      </li>
+                    </ul>
+
+
+
+
+
+                  </div>
+
+                </motion.div>
+                <motion.div
+                  variants={{
+                    hidden: {
+                      opacity: 0,
+                      y: -20,
+                    },
+
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                    },
+                  }}
+                  initial="hidden"
+                  whileInView="visible"
+                  transition={{ duration: 1, delay: 0.1 }}
+                  viewport={{ once: true }}
+                  className="animate_top mt-10"
+
+                >
+                  <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
+                    <u>
+
+                      Hours{" "}
+                    </u>
+                  </h4>
+
+                  <ul className="row-gap-6 text-black">
+                    <li className="flex gap-8 text-[17px] font-[500]">
                       <div>Monday - Friday</div>
                       <div>9 AM - 5 PM</div>
                     </li>
 
-                    <li className="flex gap-[85px] text-[17px] font-[500]">
+                    <li className="flex gap-8 text-[17px] font-[500]">
                       <div>Saturday -</div>
                       <div>By Appointment</div>
                     </li>
 
-                    <li className="flex gap-[100px] text-[17px] font-[500]">
+                    <li className="flex gap-[48px] text-[17px] font-[500]">
                       <div>Sunday -</div>
                       <div>Closed</div>
                     </li>
@@ -104,96 +170,81 @@ const Footer = () => {
                   whileInView="visible"
                   transition={{ duration: 1, delay: 0.1 }}
                   viewport={{ once: true }}
-                  className="animate_top"
+                  className="animate_top mt-10"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Address
+                  <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
+                    <u>
+
+                      Address
+                    </u>
                   </h4>
 
                   <div className="text-black">
-                    703-330-9300 9028-C Prince <br /> William Street, Manassas,
-                    VA 20110
+                    <p className="text-black">
+                      9028 Prince William Street - Suite C
+                    </p>
+                    <p className="text-black">
+                      Manassas, VA 20110-5664
+                    </p>
+                    <p className="text-black">
+                      Phone: 703-330-9300
+                    </p>
                   </div>
-                  <ul className="flex md:justify-end gap-8 pt-5 justify-start">
-                  <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 36 36"><path fill="black" d="M32 6H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-1.54 22H5.66l7-7.24l-1.44-1.39L4 26.84V9.52l12.43 12.37a2 2 0 0 0 2.82 0L32 9.21v17.5l-7.36-7.36l-1.41 1.41ZM5.31 8h25.07L17.84 20.47Z" className="clr-i-outline clr-i-outline-path-1"/><path fill="none" d="M0 0h36v36H0z"/></svg>
-                </li>
-                <li>
-                  <a href="">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="black" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.27 1.05.42 1.41.53c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18c.21-.58.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.53.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.12-.24-.01-.39.11-.5c.11-.11.27-.29.37-.44c.13-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.4-.42-.56-.43c-.14 0-.3-.01-.47-.01"/></svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/">
-                <svg className="hover:text-red-500" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="black" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg>
-                </a>
-                </li>
-                    
-                  </ul>
+
                 </motion.div>
 
-                {/* <motion.div
-                  variants={{
-                    hidden: {
-                      opacity: 0,
-                      y: -20,
-                    },
 
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                    },
-                  }}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ duration: 1, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="animate_top"
-                >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Newsletter
-                  </h4>
-                  <p className="mb-4 w-[90%]">
-                    Subscribe to receive future updates
-                  </p>
 
-                  <form action="#">
-                    <div className="relative">
-                      <input
-                        type="text"
-                        placeholder="Email address"
-                        className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
-                      />
 
-                      <button
-                        aria-label="signup to newsletter"
-                        className="absolute right-0 p-4"
-                      >
-                        <svg
-                          className="fill-[#757693] hover:fill-primary dark:fill-white"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g clipPath="url(#clip0_48_1487)">
-                            <path
-                              d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
-                              fill=""
-                            />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_48_1487">
-                              <rect width="20" height="20" fill="white" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-                    </div>
-                  </form>
-                </motion.div> */}
               </div>
+
+              <motion.div
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    y: -20,
+                  },
+
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                  },
+                }}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 1, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="animate_top mt-10"
+
+              >
+                <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
+                  <u>
+                    Connect via{" "}
+                  </u>
+                </h4>
+
+                <ul className="flex md:justify-end gap-10 pt-1 justify-start "
+                  style={{ alignItems: "center" }}>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 36 36"><path fill="black" d="M32 6H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-1.54 22H5.66l7-7.24l-1.44-1.39L4 26.84V9.52l12.43 12.37a2 2 0 0 0 2.82 0L32 9.21v17.5l-7.36-7.36l-1.41 1.41ZM5.31 8h25.07L17.84 20.47Z" className="clr-i-outline clr-i-outline-path-1" /><path fill="none" d="M0 0h36v36H0z" /></svg>
+                  </li>
+                  <li>
+                    <a href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="black" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.27 1.05.42 1.41.53c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18c.21-.58.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.53.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.12-.24-.01-.39.11-.5c.11-.11.27-.29.37-.44c.13-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.4-.42-.56-.43c-.14 0-.3-.01-.47-.01" /></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/">
+                      <svg className="hover:text-red-500" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="black" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" /></svg>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </motion.div>
+
+
+
             </div>
           </div>
           {/* <!-- Footer Top --> */}

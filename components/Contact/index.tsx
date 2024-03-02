@@ -140,8 +140,15 @@ const Contact = () => {
             <h3 className="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
               Address
             </h3>
+           
             <p className="text-black">
-              703-330-9300 9028-C Prince William Street, Manassas, VA 20110
+            9028 Prince William Street - Suite C
+            </p>
+            <p className="text-black">
+            Manassas, VA 20110-5664
+            </p>
+            <p className="text-black">
+            Phone: 703-330-9300
             </p>
  
             <div className="px-[20px]">
@@ -183,25 +190,24 @@ const Contact = () => {
  
           <div className="flex flex-col flex-wrap gap-8 md:flex-nowrap md:justify-between lg:flex-row xl:gap-20">
             <motion.div
-              variants={{
+               variants={{
                 hidden: {
-                  opacity: 0,
-                  y: -20,
+                    opacity: 0,
+                    y: -20,
                 },
- 
                 visible: {
-                  opacity: 1,
-                  y: 0,
+                    opacity: 1,
+                    y: 0,
                 },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-full rounded-lg border bg-white p-7.5 shadow-solid-9 dark:border-strokedark dark:bg-black lg:w-[50%] xl:p-15"
-              style={{border:'2px solid green'}}
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="animate_top w-full rounded-lg border border-green-500 bg-white p-5 shadow-md dark:border-strokedark dark:bg-black lg:w-1/2 xl:p-10"
+            style={{border:'2px solid green'}}
             >
-              <h2 className="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
+              <h2 className="mb-8 text-2xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
                 Send a message
               </h2>
  
@@ -290,22 +296,22 @@ const Contact = () => {
             </motion.div>
  
             <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
- 
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
+                variants={{
+                  hidden: {
+                      opacity: 0,
+                      y: -20,
+                  },
+                  visible: {
+                      opacity: 1,
+                      y: 0,
+                  },
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 2, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-full md:p-7.5 lg:w-[50%] xl:pt-15"
+              className="animate_top w-full rounded-lg border border-green-500 bg-white p-5 shadow-md dark:border-strokedark dark:bg-black lg:w-1/2 xl:p-10"
+              style={{border:'2px solid green'}}          
             >
               {/* <h2 className="mb-12.5 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
                 contact us
@@ -336,6 +342,9 @@ const Contact = () => {
                 </p>
               </div> */}
  
+ <h2 className="mb-8 text-2xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
+        Location
+    </h2>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103488.79903795655!2d-77.54669283311422!3d38.74407570437255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b65c756158a8bf%3A0x7bc61d2662028d95!2sHistoric%20District%2C%209028%20Prince%20William%20St%20STE%20C%2C%20Manassas%2C%20VA%2020110%2C%20USA!5e0!3m2!1sen!2sin!4v1707393761191!5m2!1sen!2sin"
                 width="100%"

@@ -52,7 +52,8 @@ useEffect(() => {
     >
 
         <div className='w-[100%] flex justify-center marquee' >
-          <div className='w-[80%] flex  overflow-hidden   	'  ref={carouselRef}>        
+          <div className='w-[80%] flex  overflow-hidden   	'  ref={carouselRef} 
+          style={{ border: "2px solid rgb(77 125 56 )", borderRadius: "15px" }}>        
             {data.map((e ,index)=>{
               return  (
 

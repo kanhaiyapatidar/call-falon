@@ -15,14 +15,14 @@ const Feature = () => {
             headerInfo={{
               title: "Our Services",
               subtitle:'',
-              description: `At Falon Sourcing Solutions LLC, we take pride to provide our customers high quality services personalized for their unique needs. We are available for face to face appointments, during our business hours and and Saturdays by appointment. Our staff members are professional, courteous and efficient.`,
+              description: `At Falon Sourcing Solutions LLC, we take pride to provide our customers high quality services personalized for their unique needs. We are available for face to face appointments, during our business hours and Saturdays by appointment. Our staff members are professional, courteous and efficient.`,
             }}
           /> */}
           {/* <!-- Section Title End --> */}
 
 <div>
   <h1 className="text-[30px] font-bold  underline   decoration-2	underline-offset-2	">Our Services</h1>
-  <p className="text-black mt-[10px] text-[18px] font-[500] ">At Falon Sourcing Solutions LLC, we take pride to provide our customers high quality services personalized for their unique needs. We are available for face to face appointments, during our business hours and and Saturdays by appointment. Our staff members are professional, courteous and efficient.</p>
+  <p className="text-black mt-[10px] text-[18px] font-[500] ">At Falon Sourcing Solutions LLC, we take pride to provide our customers high quality services personalized for their unique needs. We are available for face to face appointments, during our business hours and Saturdays by appointment. Our staff members are professional, courteous and efficient.</p>
 </div>
           <div className="mt-12.5 grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:mt-15 lg:grid-cols-3 xl:mt-20 xl:gap-y-15.5 xl:gap-x-10.5	">
             {/* <!-- Features item Start --> */}
