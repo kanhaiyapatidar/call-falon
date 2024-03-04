@@ -90,7 +90,7 @@ const Footer = () => {
                  className="animate_top mt-10 text-justify flex flex-col justify-center min-[550px]:justify-start min-[550px]:items-start items-center" 
 
                >
-                 <h4 className="mb-5 text-itemtitle2  font-medium text-black dark:text-white">
+                 <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
                    <u>
 
                      Hours{" "}
@@ -98,17 +98,17 @@ const Footer = () => {
                  </h4>
 
                  <ul className="row-gap-6 text-black">
-                   <li className="flex  text-[16px] font-[500]">
+                   <li className="flex  text-[16px] ">
                      <div> <span>Monday - Friday</span><span>: 9AM - 5PM</span></div>
                      
                    </li>
 
-                   <li className="flex gap-8 text-[16px] font-[500]">
+                   <li className="flex gap-8 text-[16px] ">
                      <div><span>Saturday </span><span>: By Appointment</span></div>
                      
                    </li>
 
-                   <li className="flex gap-[48px] text-[16px] font-[500]">
+                   <li className="flex gap-[48px] text-[16px] ">
                      <div><span>Sunday</span><span>: Closed</span></div>
                      
                    </li>
@@ -140,7 +140,7 @@ const Footer = () => {
                </div>
                
 
-              <div
+              {/* <div
                
                 className="animate_top mt-10 px-0 2xl:px-10 flex flex-col justify-center min-[550px]:justify-start min-[550px]:items-start items-center"
 
@@ -169,7 +169,7 @@ const Footer = () => {
 
                 </ul>
 
-              </div>
+              </div> */}
               </div>
 
 
