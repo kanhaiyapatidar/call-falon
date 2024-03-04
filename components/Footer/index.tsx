@@ -9,33 +9,20 @@ const Footer = () => {
       <footer
         style={{ "border": "1px solid green" }}
         className="footer border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
-        <div className="mx-auto max-w-c-1390 py-2 px-4 md:px-8 2xl:px-0">
+        <div className="px-5">
           {/* <!-- Footer Top --> */}
-          <div>
-            <div className="flex flex-wrap gap-8 lg:justify-between lg:gap-0">
-              <motion.div
-                variants={{
-                  hidden: {
-                    opacity: 0,
-                    y: -20,
-                  },
-
-                  visible: {
-                    opacity: 1,
-                    y: 0,
-                  },
-                }}
-                initial="hidden"
-                whileInView="visible"
-                transition={{ duration: 1, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="animate_top w-1/2 pt-[15px] lg:w-1/4"
+       
+            <div className="flex md:flex-row flex-col justify-center items-center gap-x-10  md:gap-x-20 lg:justify-between ">
+              
+              <div
+                className="animate_top pt-[15px] w-full  md:w-[25%] flex flex-col justify-center items-center"
               >
+                
                 <a href="index.html" className="relative">
                   <Image alt="" src="/logoUpdated.png" width={150} height={60} />
                 </a>
 
-                <p className="mb-10 mt-5 text-[22px] font-[600] text-black">
+                <p className="mb-10 mt-5 text-[22px] text-center font-[600] text-black">
                   Falon Sourcing Solutions LLC{" "}
                 </p>
 
@@ -48,182 +35,123 @@ const Footer = () => {
                 >
                   hello@solid.com
                 </a> */}
-              </motion.div>
-
-
-
-              <div className="flex w-full flex-col gap-12 md:flex-row lg:w-full lg:flex-wrap xl:w-7/12">
-
-                <motion.div
-                  variants={{
-                    hidden: {
-                      opacity: 0,
-                      y: -20,
-                    },
-
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                    },
-                  }}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ duration: 1, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="animate_top mt-10"
-                >
-                  <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
-                    <u>
-
-                      Quick links
-                    </u>
-                  </h4>
-
-                  <div className="text-black " style={{ cursor: "pointer", marginLeft:"-20px" }} >
-                    <ul >
-                      <li>
-                        <Link href={"/"} className="px-[20px]"> Home</Link>
-
-                      </li>
-                      <li>
-                        <Link href={"/ourServices"} className="px-[20px]"> Our services</Link>
-
-                      </li>
-                      <li>
-
-                        <Link href={"/about"} className="px-[20px]">  About us</Link>
-                      </li>
-                      <li>
-                        <Link href={"/contractingVehicles"} className="px-[20px]">  Contracting vehicles</Link>
-
-                      </li>
-                      <li>
-                        <Link href={"/contact"} className="px-[20px]"> Contact</Link>
-
-                      </li>
-                    </ul>
-
-
-
-
-
-                  </div>
-
-                </motion.div>
-                <motion.div
-                  variants={{
-                    hidden: {
-                      opacity: 0,
-                      y: -20,
-                    },
-
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                    },
-                  }}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ duration: 1, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="animate_top mt-10"
-
-                >
-                  <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
-                    <u>
-
-                      Hours{" "}
-                    </u>
-                  </h4>
-
-                  <ul className="row-gap-6 text-black">
-                    <li className="flex gap-8 text-[17px] font-[500]">
-                      <div>Monday - Friday</div>
-                      <div>9 AM - 5 PM</div>
-                    </li>
-
-                    <li className="flex gap-8 text-[17px] font-[500]">
-                      <div>Saturday -</div>
-                      <div>By Appointment</div>
-                    </li>
-
-                    <li className="flex gap-[48px] text-[17px] font-[500]">
-                      <div>Sunday -</div>
-                      <div>Closed</div>
-                    </li>
-                  </ul>
-                </motion.div>
-
-                <motion.div
-                  variants={{
-                    hidden: {
-                      opacity: 0,
-                      y: -20,
-                    },
-
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                    },
-                  }}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ duration: 1, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="animate_top mt-10"
-                >
-                  <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
-                    <u>
-
-                      Address
-                    </u>
-                  </h4>
-
-                  <div className="text-black">
-                    <p className="text-black">
-                      9028 Prince William Street - Suite C
-                    </p>
-                    <p className="text-black">
-                      Manassas, VA 20110-5664
-                    </p>
-                    <p className="text-black">
-                      Phone: 703-330-9300
-                    </p>
-                  </div>
-
-                </motion.div>
-
-
-
-
               </div>
 
-              <motion.div
-                variants={{
-                  hidden: {
-                    opacity: 0,
-                    y: -20,
-                  },
 
-                  visible: {
-                    opacity: 1,
-                    y: 0,
-                  },
-                }}
-                initial="hidden"
-                whileInView="visible"
-                transition={{ duration: 1, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="animate_top mt-10"
+{/* 
+              <div className="flex w-full flex-col gap-12 md:flex-row lg:w-full lg:flex-wrap xl:w-7/12">
+
+              
+
+
+
+
+              </div> */}
+              <div className="w-full md:w-[75%] grid grid-cols-1 min-[550px]:grid-cols-2 xl:grid-cols-4 gap-8  ">
+              <div
+                 
+                 className="animate_top mt-10 flex flex-col justify-center min-[550px]:justify-start min-[550px]:items-start items-center"
+               >
+                 <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
+                   <u>
+
+                     Quick links
+                   </u>
+                 </h4>
+
+                 <div className="text-black " style={{ cursor: "pointer", marginLeft:"-20px" }} >
+                   <ul >
+                     <li>
+                       <Link href={"/"} className="px-[20px]"> Home</Link>
+
+                     </li>
+                     <li>
+                       <Link href={"/ourServices"} className="px-[20px]"> Our services</Link>
+
+                     </li>
+                     <li>
+
+                       <Link href={"/about"} className="px-[20px]">  About us</Link>
+                     </li>
+                     <li>
+                       <Link href={"/contractingVehicles"} className="px-[20px]">  Contracting vehicles</Link>
+
+                     </li>
+                     <li>
+                       <Link href={"/contact"} className="px-[20px]"> Contact</Link>
+
+                     </li>
+                   </ul>
+
+                 </div>
+
+               </div>
+               <div
+                 className="animate_top mt-10 text-justify flex flex-col justify-center min-[550px]:justify-start min-[550px]:items-start items-center" 
+
+               >
+                 <h4 className="mb-5 text-itemtitle2  font-medium text-black dark:text-white">
+                   <u>
+
+                     Hours{" "}
+                   </u>
+                 </h4>
+
+                 <ul className="row-gap-6 text-black">
+                   <li className="flex  text-[16px] font-[500]">
+                     <div> <span>Monday - Friday</span><span>: 9AM - 5PM</span></div>
+                     
+                   </li>
+
+                   <li className="flex gap-8 text-[16px] font-[500]">
+                     <div><span>Saturday </span><span>: By Appointment</span></div>
+                     
+                   </li>
+
+                   <li className="flex gap-[48px] text-[16px] font-[500]">
+                     <div><span>Sunday</span><span>: Closed</span></div>
+                     
+                   </li>
+                 </ul>
+               </div>
+
+               <div
+                 className="animate_top mt-10 flex flex-col justify-center min-[550px]:justify-start min-[550px]:items-start items-center"
+               >
+                 <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
+                   <u>
+
+                     Address
+                   </u>
+                 </h4>
+
+                 <div className="text-black">
+                   <p className="text-black">
+                     9028 Prince William Street - Suite C
+                   </p>
+                   <p className="text-black">
+                     Manassas, VA 20110-5664
+                   </p>
+                   <p className="text-black">
+                     Phone: 703-330-9300
+                   </p>
+                 </div>
+
+               </div>
+               
+
+              <div
+               
+                className="animate_top mt-10 px-0 2xl:px-10 flex flex-col justify-center min-[550px]:justify-start min-[550px]:items-start items-center"
 
               >
-                <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
-                  <u>
+                <h4 className="mb-5 text-itemtitle2    font-medium text-black dark:text-white">
+                  <u className=" ">
                     Connect via{" "}
                   </u>
                 </h4>
 
-                <ul className="flex md:justify-end gap-10 pt-1 justify-start "
+                <ul className="flex   pt-1  gap-8 "
                   style={{ alignItems: "center" }}>
                   <li>
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 36 36"><path fill="black" d="M32 6H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-1.54 22H5.66l7-7.24l-1.44-1.39L4 26.84V9.52l12.43 12.37a2 2 0 0 0 2.82 0L32 9.21v17.5l-7.36-7.36l-1.41 1.41ZM5.31 8h25.07L17.84 20.47Z" className="clr-i-outline clr-i-outline-path-1" /><path fill="none" d="M0 0h36v36H0z" /></svg>
@@ -241,12 +169,13 @@ const Footer = () => {
 
                 </ul>
 
-              </motion.div>
+              </div>
+              </div>
 
 
 
             </div>
-          </div>
+          
           {/* <!-- Footer Top --> */}
 
           {/* <!-- Footer Bottom --> */}
