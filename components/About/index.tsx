@@ -54,7 +54,7 @@ const About = () => {
         viewport={{ once: true }}
         className="flex  justify-center px-[0px] sm:px-[18px] pt-[150px] pb-[80px] lg:flex-row flex-col-reverse gap-y-[40px]"
       >
-        <div className="flex w-full lg:w-[50%]  flex-col items-center	  ">
+        <div className="flex w-full lg:w-[50%]  flex-col items-center	justify-center  ">
           <img
             loading="lazy"
             decoding="async"
@@ -63,7 +63,7 @@ const About = () => {
             src="/images/about/aboutUs.PNG"
             alt=""
             title=""
-            className="h-[90%] w-[80%] rounded-[10px] 	"
+            className="h-[80%] w-[80%] rounded-[10px] 	"
             style={{
               boxShadow: "0px 2px 18px 0px rgba(0,0,0,0.3)",
               position: "relative",

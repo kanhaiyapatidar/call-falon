@@ -50,7 +50,7 @@ const Footer = () => {
               <div className="w-full md:w-[75%] grid grid-cols-1 min-[550px]:grid-cols-2 xl:grid-cols-3 gap-8  ">
               <div
                  
-                 className="animate_top mt-3 flex flex-col justify-center min-[550px]:justify-start min-[550px]:items-start items-center"
+                 className="animate_top mt-3 flex flex-col  min-[550px]:justify-start min-[550px]:items-start "
                >
                  <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
                    <u>
@@ -87,7 +87,7 @@ const Footer = () => {
 
                </div>
                <div
-                 className="animate_top mt-3 text-justify flex flex-col justify-center min-[550px]:justify-start min-[550px]:items-start items-center" 
+                 className="animate_top mt-3 text-justify flex flex-col  min-[550px]:justify-start min-[550px]:items-start " 
 
                >
                  <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
@@ -116,7 +116,7 @@ const Footer = () => {
                </div>
 
                <div
-                 className="animate_top mt-3 flex flex-col justify-center min-[550px]:justify-start min-[550px]:items-start items-center"
+                 className="animate_top mt-3 flex flex-col  min-[550px]:justify-start min-[550px]:items-start "
                >
                  <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
                    <u>

@@ -60,7 +60,7 @@ const Hero = () => {
             <img
               src={image.src}
               alt={image.alt}
-              className={currentImage === index ?  "h-[100vh] w-[100%]  filter brightness-50 opacity-80" : "h-[100vh] w-[100%] "}
+              className={currentImage === index ?  "h-[100vh] w-[100%]  filter brightness-50 " : "h-[100vh] w-[100%] "}
             />
             
             </div>
