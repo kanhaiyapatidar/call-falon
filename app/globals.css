@@ -961,9 +961,8 @@ body {
 }
 
 
-.aboutBox:hover {
-  transform: translateY(2px);
-  transform: translateX(-2px);
+.aboutBox:hover img {
+  transform: scale(1.1);
 
 }
 

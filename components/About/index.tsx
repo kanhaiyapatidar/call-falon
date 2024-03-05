@@ -8,15 +8,27 @@ import { useEffect, useRef } from 'react';
 const About = () => {
 
   const logos = [
-    { id: 1, imageUrl: "/aviation.jpg", altText: 'Logo 1' },
-    { id: 2, imageUrl: '/logoUpdated.png', altText: 'Logo 2' },
-    { id: 3, imageUrl: '/usDepartmentLabor.jpg', altText: 'Logo 3' },
-    { id: 4, imageUrl: '/aviation.jpg', altText: 'Logo 4' },
-    { id: 5, imageUrl: "/aviation.jpg", altText: 'Logo 5' },
-    { id: 6, imageUrl: '/logoUpdated.png', altText: 'Logo 6' },
-    { id: 7, imageUrl: '/usDepartmentLabor.jpg', altText: 'Logo 7' },
-    { id: 8, imageUrl: '/aviation.jpg', altText: 'Logo 8' },
-    // Add more logo data as needed
+    { imageUrl: "/images/about/logo/1.dol logo.png" },
+    {  imageUrl: '/images/about/logo/2.doi logo.png' },
+    {  imageUrl: '/images/about/logo/3.faa logo.png' },
+    {  imageUrl: '/images/about/logo/4.Fema logo.png' },
+    {  imageUrl: "/images/about/logo/5.fema logo ii.jpg" },
+    {  imageUrl: '/images/about/logo/6.ssa logo.png' },
+    { imageUrl: '/images/about/logo/7gao logo i.png' },
+    {  imageUrl: '/images/about/logo/8.goldman sach alumni.png' },
+    {  imageUrl: '/images/about/logo/9.loc logo.png' },
+    {  imageUrl: '/images/about/logo/10.hud logo.jpg'},
+    {  imageUrl: '/images/about/logo/11.gsa advantage finger pointing - Copy.jpg'},
+    {  imageUrl: '/images/about/logo/12.gpo logo i.png'},
+    {  imageUrl: '/images/about/logo/13.NEA.png'},
+    {  imageUrl: '/images/about/logo/14.sbsd.jpg'},
+    {  imageUrl: '/images/about/logo/15.us courts logo.jpg'},
+    {  imageUrl: '/images/about/logo/16.uspto.png'},
+    {  imageUrl: '/images/about/logo/17.WKC logo.png'},
+    {  imageUrl: '/images/about/logo/18.swam logo ii.jpeg'},
+    {  imageUrl: '/images/about/logo/19.NVFS-Web-Logo-0927.png'},
+    {  imageUrl: '/images/about/logo/20.VA logo.jpg'},
+
   ];
  
 
@@ -48,10 +60,10 @@ const About = () => {
             decoding="async"
             width="700"
             height="600"
-            src="https://demos.layoutdivi.com/wp-content/uploads/2022/11/Divi-About-Us-Section-Hero-Image-1.jpg"
+            src="/images/about/aboutUs.PNG"
             alt=""
             title=""
-            className="h-[100%] w-[80%] rounded-[10px] 	"
+            className="h-[90%] w-[80%] rounded-[10px] 	"
             style={{
               boxShadow: "0px 2px 18px 0px rgba(0,0,0,0.3)",
               position: "relative",
@@ -244,6 +256,27 @@ const About = () => {
           </div>
         </div>
       </motion.div>
+      <section 
+       style={{ padding: "2px", paddingTop:'25px' ,backgroundColor: "rgb(234 229 229 / 44%)" }}>
+     
+
+      <div className="flex justify-center items-center  px-5 lg:px-24 gap-5 lg:gap-15 flex-wrap	">
+      {logos.map((logo, index) => (
+           
+              <div >
+                <img
+                  src={logo.imageUrl}
+                  className="w-24 sm:w-28 lg:w-40 h-auto max-h-40 object-cover shadow-xl  "
+                  alt={`Logo ${index}`}
+                  style={{ margin: "10px", cursor: 'pointer' }}
+                  onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+                  onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                />
+              </div>
+            
+          ))}
+      </div>
+    </section>
       <div
         
       
@@ -543,34 +576,7 @@ const About = () => {
       </div>
 
 
-     <section 
-       style={{ padding: "2px" ,backgroundColor: "rgb(234 229 229 / 44%)" }}>
-      <div className="relative overflow-hidden">
-        <div
-          className="flex items-center p-4 sm:p-6 lg:p-8 logo-container "
-       
-        >
-          {logos.map((logo, index) => (
-            <div
-              key={logo.id}
-              className="relative flex-shrink-0 mr-2 logo"
-              style={{ position: 'relative', zIndex: logos.length - index }}
-            >
-              <div id="scrollLogo">
-                <img
-                  src={logo.imageUrl}
-                  className="w-24 sm:w-28 lg:w-30 h-auto max-h-30 object-cover"
-                  alt={`Logo ${index}`}
-                  style={{ margin: "10px", cursor: 'pointer' }}
-                  onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
-                  onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+ 
 
       <div
         

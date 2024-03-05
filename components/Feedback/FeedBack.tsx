@@ -58,7 +58,7 @@ useEffect(() => {
               return  (
 
              <>
-             <div  key={index} className='bg-gray-200 h-[150px] min-w-[100%] px-[40px]  rounded-2xl flex justify-center items-center flex-col text-center gap-[10px]'>
+             <div  key={index} className='bg-gray-200 h-auto py-[20px] min-w-[100%] px-[40px]  rounded-2xl flex justify-center items-center flex-col text-center gap-[10px]'>
               <h1 className='text-[20px] font-[800] '>{data[currentImage].feedbackTitle}</h1>
             <span className='text-[19px] text-black italic	 '>{data[currentImage].feedback}</span> 
             <p className='text-black font-bold'>{e.customerName}</p>

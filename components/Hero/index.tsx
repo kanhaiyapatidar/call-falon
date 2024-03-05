@@ -9,23 +9,19 @@ const Hero = () => {
   const carouselRef = useRef(null);
 
   const images = [
+  
     {
-      src: "/images/features/logistic.jpg",
-      alt: "Image 1",
-      text: "Falon has established a standard of excellence by providing comprehensive support services to Federal, State, Local Governments, Corporations and Associations through delivering high quality cost effective innovative solutions. In addition, Falon is a graduate of the U.S. Small Business Administration 8(a) business development program.",
-    },
-    {
-      src: "/images/features/support.jpg",
+      src: "/images/hero/homepage-1.jpg",
       alt: "Image 2",
       text: "The Falon Sourcing Solutions Falon website is intended to provide information about our company and the services we provide. Falon makes no express or implied warranties as to the accuracy of any third party information contained in this website.The reader accepts the information contained on our website as is and assumes all responsibility for the use of such information.",
     },
     {
-      src: "/images/features/warehouse.jpg",
+      src: "/images/hero/homepage-2.jpg",
       alt: "Image 3",
       text: "Any links provided in the Falon website are for your convenience only. Falon is not responsible for the content or performance of the websites nor do these links imply endorsement of the material or the owner of the website. ",
     },
     {
-      src: "/images/features/facilities.webp",
+      src: "/images/hero/homepage-3.jpg",
       alt: "Image 4",
       text: "Information on this website is subject to change without notice.While visiting our website, please feel free to contact us with any questions, suggestions, or comments you may have that would improve websites content",
     },

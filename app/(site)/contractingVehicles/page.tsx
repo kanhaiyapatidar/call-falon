@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const contractingVehicles = () => {
   return (
-    <div className="pb-21 pt-5">
+    <div className="pb-5 pt-5 h-[66vh]">
 <ContractingVehicles/>
     </div>
   );
