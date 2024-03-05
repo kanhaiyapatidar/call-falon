@@ -11,7 +11,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 2,
-    image: "/images/features/logistic.JPG",
+    image: "/images/features/logistic.jpg",
     icon: "/images/icon/icon-02.svg",
     title: "Logistic Consulting / Coordination  ",
     description:
