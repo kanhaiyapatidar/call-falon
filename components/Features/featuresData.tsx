@@ -9,9 +9,10 @@ const featuresData: Feature[] = [
     description:
       "Falon’s capabilities include management of ON and OFF site mailroom & warehouse facilities. We specialize in meeting our client's requirements for privacy, document security, control, and turnaround time. Our staffing strategies guarantee seamless transition and employee retention..",
   },
+  
   {
     id: 2,
-    image: "/images/features/logistic.JPG",
+    image: "/images/features/logistic.jpg",
     icon: "/images/icon/icon-02.svg",
     title: "Logistic Consulting / Coordination  ",
     description:
